@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Eric K Idema", "Matt Kimmel", "Grant Speelman"]
-  s.date = "2014-04-29"
+  s.date = "2014-04-28"
   s.description = "Dorothy is a z-machine interpreter library.  It's core is C (taken in part from Frotz), the interface is Ruby.  Ideally this project forms the basis for writing interpreters and other tools."
   s.email = "grant.speelman@ubxd.com"
   s.executables = ["dorothy"]
@@ -49,6 +49,7 @@ Gem::Specification.new do |s|
     "lib/dorothy/dictionary.rb",
     "lib/dorothy/header.rb",
     "lib/dorothy/machine.rb",
+    "lib/dorothy/machine/machine.bundle",
     "lib/dorothy/memory.rb",
     "lib/dorothy/object.rb",
     "lib/dorothy/object_table.rb",
@@ -59,42 +60,72 @@ Gem::Specification.new do |s|
     "lib/dorothy/version.rb",
     "test/dorothy/dictionary_test.rb",
     "test/dorothy/programs/array.inf",
+    "test/dorothy/programs/array.z5",
     "test/dorothy/programs/call.inf",
+    "test/dorothy/programs/call.z5",
     "test/dorothy/programs/hello_world.inf",
+    "test/dorothy/programs/hello_world.z5",
     "test/dorothy/programs/jump.inf",
+    "test/dorothy/programs/jump.z5",
     "test/dorothy/programs/math.inf",
+    "test/dorothy/programs/math.z5",
     "test/dorothy/programs/nop.inf",
+    "test/dorothy/programs/nop.z5",
     "test/dorothy/programs/object_attr.inf",
+    "test/dorothy/programs/object_attr.z5",
     "test/dorothy/programs/object_prop.inf",
+    "test/dorothy/programs/object_prop.z5",
     "test/dorothy/programs/object_tree.inf",
+    "test/dorothy/programs/object_tree.z5",
     "test/dorothy/programs/print.inf",
+    "test/dorothy/programs/print.z5",
     "test/dorothy/programs/random.inf",
+    "test/dorothy/programs/random.z5",
     "test/dorothy/programs/read.inf",
+    "test/dorothy/programs/read.z5",
     "test/dorothy/programs/stack.inf",
+    "test/dorothy/programs/stack.z5",
     "test/dorothy/programs/v3/array.inf",
+    "test/dorothy/programs/v3/array.z3",
     "test/dorothy/programs/v3/call.inf",
+    "test/dorothy/programs/v3/call.z3",
     "test/dorothy/programs/v3/hello_world.inf",
+    "test/dorothy/programs/v3/hello_world.z3",
     "test/dorothy/programs/v3/jump.inf",
+    "test/dorothy/programs/v3/jump.z3",
     "test/dorothy/programs/v3/math.inf",
+    "test/dorothy/programs/v3/math.z3",
     "test/dorothy/programs/v3/nop.inf",
+    "test/dorothy/programs/v3/nop.z3",
     "test/dorothy/programs/v3/object_attr.inf",
+    "test/dorothy/programs/v3/object_attr.z3",
     "test/dorothy/programs/v3/object_prop.inf",
+    "test/dorothy/programs/v3/object_prop.z3",
     "test/dorothy/programs/v3/object_tree.inf",
+    "test/dorothy/programs/v3/object_tree.z3",
     "test/dorothy/programs/v3/print.inf",
+    "test/dorothy/programs/v3/print.z3",
     "test/dorothy/programs/v3/random.inf",
+    "test/dorothy/programs/v3/random.z3",
     "test/dorothy/programs/v3/read.inf",
+    "test/dorothy/programs/v3/read.z3",
     "test/dorothy/programs/v3/stack.inf",
+    "test/dorothy/programs/v3/stack.z3",
     "test/dorothy/programs/v3/variable.inf",
+    "test/dorothy/programs/v3/variable.z3",
     "test/dorothy/programs/v3/verify.inf",
+    "test/dorothy/programs/v3/verify.z3",
     "test/dorothy/programs/variable.inf",
+    "test/dorothy/programs/variable.z5",
     "test/dorothy/programs/verify.inf",
+    "test/dorothy/programs/verify.z5",
     "test/dorothy/programs_test.rb",
     "test/dorothy/serialize_test.rb",
     "test/test_helper.rb"
   ]
   s.homepage = "http://github.com/grantspeelman/dorothy"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.2.2"
+  s.rubygems_version = "2.2.0"
   s.summary = "Dorothy is a z-machine interpreter library"
 
   if s.respond_to? :specification_version then
