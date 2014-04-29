@@ -13,6 +13,17 @@ require 'rake'
 
 require 'jeweler'
 require File.expand_path("../lib/dorothy/version", __FILE__)
+
+  PKG_FILES = FileList[
+    'lib/**/*',
+    'bin/dorothy',
+    'test/**/*',
+    'ext/**/*',
+    'doc/**/*',
+    'Rakefile',
+    'README',
+    'COPYING']
+
 jeweler_tasks = Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "dorothy"
@@ -24,7 +35,7 @@ jeweler_tasks = Jeweler::Tasks.new do |gem|
   gem.authors = ["Eric K Idema","Matt Kimmel","Grant Speelman"]
   gem.executables = ['dorothy']
   gem.extensions = FileList['ext/**/extconf.rb']
-  gem.files.include('lib/dorothy/machine/machine.*')
+  gem.files = PKG_FILES.to_a
   gem.version = Dorothy::VERSION
   # dependencies defined in Gemfile
 end
