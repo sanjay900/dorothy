@@ -125,7 +125,8 @@ class Z::Screen
       foreground = COLORS.index( screen.foreground )
       background = COLORS.index( screen.background )
 
-      s.each_char do |c|
+      # FIXME added because trying to call each on 0
+      s.to_s.each_char do |c|
         @chars[@cursor]  = c
         @colors[@cursor] = [foreground, background]
         @styles[@cursor] = style
