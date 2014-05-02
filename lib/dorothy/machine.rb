@@ -36,6 +36,10 @@ class Z::Machine
       @id, @str = id, ""
     end
 
+    def clear
+      @str = ""
+    end
+
     def <<( s )
       @str << s
     end
