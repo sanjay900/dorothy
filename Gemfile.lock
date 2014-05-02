@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    dorothy (0.0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -64,6 +69,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
+  dorothy!
   jeweler
   minitest
   minitest-reporters

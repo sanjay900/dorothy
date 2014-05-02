@@ -7,12 +7,12 @@
 
 Gem::Specification.new do |s|
   s.name = "dorothy"
-  s.version = "0.0.2.pre"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
-  s.require_paths = ["lib"]
+  s.require_paths = ["lib", "ext"]
   s.authors = ["Eric K Idema", "Matt Kimmel", "Grant Speelman"]
-  s.date = "2014-04-28"
+  s.date = "2014-05-02"
   s.description = "Dorothy is a z-machine interpreter library.  It's core is C (taken in part from Frotz), the interface is Ruby.  Ideally this project forms the basis for writing interpreters and other tools."
   s.email = "grant.speelman@ubxd.com"
   s.executables = ["dorothy"]
@@ -49,7 +49,6 @@ Gem::Specification.new do |s|
     "lib/dorothy/dictionary.rb",
     "lib/dorothy/header.rb",
     "lib/dorothy/machine.rb",
-    "lib/dorothy/machine/machine.bundle",
     "lib/dorothy/memory.rb",
     "lib/dorothy/object.rb",
     "lib/dorothy/object_table.rb",
@@ -57,11 +56,11 @@ Gem::Specification.new do |s|
     "lib/dorothy/random.rb",
     "lib/dorothy/screen.rb",
     "lib/dorothy/status.rb",
-    "lib/dorothy/version.rb"
+    "lib/dorothy/version.rb",
   ]
   s.homepage = "http://github.com/grantspeelman/dorothy"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.2.0"
+  s.rubygems_version = "2.2.2"
   s.summary = "Dorothy is a z-machine interpreter library"
 
   if s.respond_to? :specification_version then
