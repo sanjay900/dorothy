@@ -356,14 +356,6 @@ void z_insert_obj( zmachine *zm ) {
  */
 
 void z_jin( zmachine *zm ) {
-  if( zm->zargs[0] == 0 || zm->zargs[0] > obj_max_objects(zm) ) {
-    runtime_error( "Illegal first object for jin" );
-  }
-
-  if( zm->zargs[1] == 0 || zm->zargs[1] > obj_max_objects(zm) ) {
-    runtime_error( "Illegal second object for jin" );
-  }
-
   p_branch( zm, obj_parent( zm, zm->zargs[0] ) == zm->zargs[1] );
 }
 
